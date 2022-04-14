@@ -1,0 +1,37 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+
+@import url('https://fonts.googleapis.com/css2?family=Henny+Penny&family=Open+Sans:wght@300&family=Open+Sans:wght@600&&display=swap');
+@import url("https://use.typekit.net/wdz3gts.css");
+@import url('https://fonts.googleapis.com/css2?family=Eater&display=swap');
+
+body {
+  background-color: black;
+  color: white;
+  font-family: myriad-pro, "Open Sans", arial, helvetica, sans-serif;
+  font-size: large;
+}
+
+.content-area {
+  min-height: 400px;
+}
+
+.body-content {
+  background-color: white;
+}
+
+.container {
+  padding: 20px;
+  width: 100%;
+}
+
+.lets-make-a-movie {
+  font-family: "Henny Penny", fantasy;
+}
+
+.bg-dark {
+  background-color: black;
+}
+
+.serendipity-title {
+  font-family: "Henny Penny", fantasy;
+}
