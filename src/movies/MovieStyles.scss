@@ -1,0 +1,34 @@
+.movie-page .main {
+}
+
+.movie-banner {
+  margin-top: 60px;
+  width: 100%;
+}
+
+.movie-character-slides {
+  margin: auto;
+  max-height: 350px;
+  width: 65%;
+}
+
+.movie-character {
+  max-width: 25%;
+}
+
+.movie-character-caption {
+  color: black;
+  margin-left: 13%;
+  top: 0;
+  bottom: auto;
+  text-align: left;
+}
+
+.movie-character-slides .carousel-control-next-icon, .carousel-control-prev-icon {
+  filter: invert(1);
+  bottom: 100%;
+}
+
+.movie-character-slides .carousel-indicators {
+  filter: invert(1);
+}

@@ -1,9 +1,14 @@
 .navbar {
-  position: fixed;
+  position: absolute;
   top: 0;
   transition: 0.4s;
   width: 100%;
   z-index: 99;
+}
+
+.navbar .container {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 .dropdown-menu {

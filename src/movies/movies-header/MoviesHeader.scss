@@ -1,0 +1,23 @@
+.movie-page .navbar {
+  background-color: black;
+  height: 60px;
+  width: 100%;
+}
+
+.movie-page .nav-item {
+  font-family: Eater, "Henny Penny", fantasy;
+  font-size: large;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.nav-item :hover {
+  color: white;
+}
+
+.nav-link {
+}
+
+.movie-page .site-logo {
+  height: 50px;
+}

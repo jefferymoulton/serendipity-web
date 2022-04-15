@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import MoviesHome from "./movies/movies-home/MoviesHome";
-import MurderByZombie from "./movies/murder-by-zombie/MurderByZombie";
+import MbzHome from "./movies/murder-by-zombie/MbzHome";
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -16,7 +16,7 @@ root.render(
           <Routes>
               <Route path="/" element={<App />} />
               <Route path="/movies" element={<MoviesHome />} />
-              <Route path="/movies/murder-by-zombie" element={<MurderByZombie />} />
+              <Route path="/movies/murder-by-zombie" element={<MbzHome />} />
           </Routes>
       </BrowserRouter>
   </React.StrictMode>

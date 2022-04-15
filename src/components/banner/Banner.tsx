@@ -1,35 +1,47 @@
 import { Carousel, Image } from "react-bootstrap";
-import { Component } from "react";
 
 import './Banner.scss';
 
-export default class Banner extends Component {
-    render() {
-        return (
-            <Carousel>
-                <Carousel.Item>
-                    <Image src="/images/carousel/movie-audience.jpg"
-                           className="banner-item"
-                           alt="audience watching a movie" />
-                    <Carousel.Caption>
-                        <h3 className="lets-make-a-movie">Let's Make a Movie!</h3>
-                        <p>
-                            Nulla vitae elit libero, a pharetra augue mollis interdum.
-                        </p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-                <Carousel.Item>
-                    <Image src="/images/carousel/father-daughter-with-clapper.jpg"
-                           className="banner-item"
-                           alt="audience watching a movie" />
-                    <Carousel.Caption>
-                        <h3 className="lets-make-a-movie">It's so much fun!!!</h3>
-                        <p>
-                            Nulla vitae elit libero, a pharetra augue mollis interdum.
-                        </p>
-                    </Carousel.Caption>
-                </Carousel.Item>
-            </Carousel>
-        );
-    }
+interface ISlides {
+    slides: ISlide[];
+    config: ISlidesConfig;
+}
+
+interface ISlide {
+    imageUrl: string;
+    altText: string;
+    captionClass: string;
+    captionTitleClass: string;
+    captionTitle: string;
+    captionTextClass: string;
+    captionText: string;
+
+}
+
+interface ISlidesConfig {
+    itemClass: string;
+    bannerClass: string;
+}
+
+const Banner: React.FC<ISlides> = ({config, slides}) => {
+    return (
+        <Carousel interval={null} className={config.bannerClass}>
+            {slides.map((slide) => {
+                return (
+                    <Carousel.Item>
+                        <Image src={slide.imageUrl} className={config.itemClass} alt={slide.altText} />
+
+                        <Carousel.Caption className={slide.captionClass}>
+                            <h3 className={slide.captionTitleClass}>{slide.captionTitle}</h3>
+                            <p className={slide.captionTextClass}>
+                                {slide.captionText}
+                            </p>
+                        </Carousel.Caption>
+                    </Carousel.Item>
+                )
+            })}
+        </Carousel>
+    );
 };
+
+export default Banner;

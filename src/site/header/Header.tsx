@@ -12,7 +12,8 @@ export default class Header extends Component {
                 <Container>
                     <Navbar.Brand as={Link} to="/" className="navbar-brand">
                         <Image src="/images/serendipity-logo-white-text.svg"
-                               className="navbar-brand site-logo" alt="Serendipity Encounters logo" />
+                               className="navbar-brand site-logo"
+                               alt="Serendipity Encounters logo" />
                     </Navbar.Brand>
 
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
